@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Data</title>
+</head>
+<body>
+    <h1>Posts from JSONPlaceholder</h1>
+    <ul>
+        <% data.forEach(post => { %>
+            <li>
+                <h2><%= post.title %></h2>
+                <p><%= post.body %></p>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
